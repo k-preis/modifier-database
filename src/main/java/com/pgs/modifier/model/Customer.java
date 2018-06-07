@@ -14,17 +14,14 @@ public class Customer implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     private Long id;
 
     @Column(name = "first_name")
     @NotNull
-    @Max(255)
     private String firstName;
 
     @Column(name = "last_name")
     @NotNull
-    @Max(255)
     private String lastName;
 
     @NotNull
